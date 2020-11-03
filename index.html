@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-head">
+            <div class="main-heading">
+                <h1 class="main-head1">Tasks</h1>
+                <h1 class="main-head2">Lists</h1>
+            </div>
+            <div class="add-list" data-target="#addlist" data-toggle="modal" data-backdrop="static" data-keyboard="false" onclick="blurEffect()">
+                <i class="fa fa-plus-circle" id="fa-add" aria-hidden="true"></i>
+                <p class="add-button">Add List</p>
+            </div>
+        </div>
+        <div class="all-cards">
+            <!-- <div class="todocard">
+                <div class="card-heading">
+                    <p>Trip To Paris</p>
+                </div>
+                <div class="allcard-body">
+                    <hr>
+                    <ul>
+                        <li>Task1</li>
+                        <li>Task2</li>
+                    </ul>
+                </div>
+                <div class="allcard-footer">
+                    <button class="btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    <button class="btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                </div>
+              
+
+            </div> -->
+
+        </div>
+        <div class="no_item">
+            <h4>No Items in the todo list</h4>
+        </div>
+
+    </div>
+    <div class="modal" role="dialog" id="addlist">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="add-card">
+                        <h4 class="addcard-heading">Add New List</h4>
+                        <input type="text" class="add-input" id="add-input"><br>
+                        <button type="button" class="todo-btn" id="add-btn">ADD</button>
+                        <button type="button" class="todo-btn" id="close-btn" onclick="removeBlurEffect('#addlist')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" role="dialog" id="additemlist">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="add-card">
+                        <h4 class="addcard-heading">Add New Item</h4>
+                        <input type="text" class="add-input" id="add-iteminput"><br>
+                        <button type="button" class="todo-btn" id="add-itembtn">ADD</button>
+                        <button type="button" class="todo-btn" id="close-itembtn" onclick="removeBlurEffect('#additemlist')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JS/index.js"></script>
+</html>

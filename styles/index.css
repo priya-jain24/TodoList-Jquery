@@ -1,0 +1,160 @@
+.main-container{
+    margin-top:60px;
+    margin-left:280px;
+    margin-right:280px;
+}
+.blur{
+    filter:blur(12px);
+}
+.main-heading, .add-list, .add-button,.main-head1,.main-head2{
+    display: inline-block;
+}
+.main-head{
+    font-size:28px;
+}
+.main-heading{
+    width:80%;
+}
+.main-head2{
+    color:gray;
+    padding-left:2px;
+    font-weight: 400;
+}
+.add-list{
+    color:gray;
+}
+#fa-add{
+    color:#eb5c26;
+}
+.all-cards{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items:stretch;
+    margin-top:60px;
+}
+div[class^="todocard"]{
+    border:2px solid #eb5c26;
+    border-radius:15px;
+    width:220px;
+    height:320px;
+    font-size:20px;
+    box-shadow:2px 4px 4px 2px gray;
+}
+
+.card-heading{
+    text-align:center;
+    color:#eb5c26;
+    margin-top:8px;
+}
+.allcard-body{
+    margin-left:32px;
+    height:204px;
+
+}
+.allcard-body hr{
+    height:2px;
+    border-width:0;
+    color:#c2c0c0;
+    background-color:#c2c0c0;
+}
+.allcard-body h3{
+    text-decoration: line-through;
+    text-decoration-color: #f60611;
+    color:#f60611;
+}
+.task-check{
+    font-size:18px;
+    color:#444343;
+    margin-left:12px;
+    font-weight: 600;
+}
+.todo-btn{
+    border-radius:25px;
+    background-color:#f60611;
+    color:white;
+    width:60px;
+    height:30px;
+    border:1px solid #f60611;
+}
+.modal-content{
+    border:2px solid #eb5c26;
+    border-radius:15px;
+    margin:auto;
+    background-color:white;
+
+}
+.modal-dialog{
+    width:445px;
+}
+.add-card{
+    text-align:center;
+}
+.add-input{
+    border:2px solid #eb5c26;
+    border-radius:4px;
+    margin-bottom:8px;
+    width:230px;
+    text-align:center;
+
+}
+.addcard-heading{
+    color:#f60611;
+}
+.mark-btn{
+    font-size:10px;
+    border-radius:15px;
+    background-color: #4b8ce8;
+}
+.allcard-list{
+    list-style: none;
+    padding-left:0px;
+}
+.mark-heading{
+    text-decoration: line-through;
+    text-decoration-color: #f60611;
+    color:#f60611;
+    text-align:center;
+}
+#delete-btn{
+    background-color: #eb5c26;
+    border-radius: 20px;
+    width: 38px;
+    color: white;
+}
+#additem-btn{
+    background-color: #4b8ce8;
+    border-radius: 20px;
+    width: 38px;
+    color: white;
+}
+.allcard-footer{
+    text-align: right;
+    padding-right: 8px;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .main-container{
+        margin:20px;
+    }
+    .add-button{display:none;}
+    .main-head{
+        font-size:22px;
+    }
+    .add-list{font-size:36px;}
+    .main-heading{
+        width:80%;
+    }
+    div[class^="todocard"]{
+        height:60px;
+        margin-bottom:12px;
+        border-width: 1px;
+        border-radius:6px;
+        width:100%;
+    }
+    .all-cards{
+        display:block;
+    }
+    .allcard-body{display:none}
+    .task-check{display:none;}
+    .allcard-heading{text-align:left;padding-left:12px;color:#646262;}
+}
